@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual é seu nome? ')
+        document.write(`Olá, <strong>${nome}<strong>! Seu nome tem ${nome.length} letras <br>`) //atributo document.write insere o valor dentro do body da página
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br>`) //torna todas letras em maiusculo
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}<br>`) ///torna todas as letras em minusculo
+        
+        n1 = 1545.5
+
+        document.write(`${n1.toFixed(2).replace('.',',')}<br>`) //Tofixed = exibe um numero flutuante um duas casas após a vírgula. Replace = substitui o ponto por virgula
+
+        
+        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`); // segindo esses parâmetros pode fazer com que o numero flutuante seja alterado para formato de moeda BRL. USA-SE .toLocaleString
+
+    
+
+    </script>
+</body>
+</html>

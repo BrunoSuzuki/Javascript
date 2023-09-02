@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(75, 75, 124);
+            color: white;
+            font: normal 20pt arial;
+            
+        }
+
+        h1 {
+            color: rgb(153, 153, 39)
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+     
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '));
+        var n2 = Number.parseFloat  (window.prompt('DIgite outro número: ')); //Mas você pode somente inserir numeros
+
+        soma = n1 + n2;
+
+        window.alert(`A soma dos valores ${n1} e ${n2} é ${soma}.`); //resultado: 42(errado), o mais pode servir como adição como concatenação. tema concatenação porque por mais que seja um número, é uma string. É NECESSÁRIA UMA MUDANÇA DE TIPO. (Number.parseInt)
+    </script>
+</body>
+</html>
