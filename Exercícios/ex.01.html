@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crie um formulário simples com 4 botões que, ao clicar em cada um, altere a cor do plano de fundo da página para
+vermelho, verde, azul e amarelo, respectivamente.-->
+
+<button onclick="fundo_vermelho()" id="vermelho">Vermelho</button>
+<button onclick="fundo_verde()" id="verde">Verde</button>
+<button onclick="fundo_amarelo()" id="amarelo">Amarelo</button>
+<button onclick="fundo_azul()" id="azul">Azul</button>
+
+<script>
+    function fundo_vermelho() {
+        const fundo = window.document.getElementById('vermelho');
+        document.body.style.backgroundColor = 'red';
+    }
+    
+    function fundo_verde() {
+        const fundo = window.document.getElementById('verde');
+        document.body.style.backgroundColor = 'green';
+    }
+
+    function fundo_amarelo() {
+        const fundo = window.document.getElementById('amarelo');
+        document.body.style.backgroundColor = 'yellow';
+    }
+
+    function fundo_azul() {
+        const fundo = window.document.getElementById('azul');
+        document.body.style.backgroundColor = 'blue';
+    }
+</script>
+    
+</body>
+</html>
