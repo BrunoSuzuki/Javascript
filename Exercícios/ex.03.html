@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="cores">Selecione a cor: </label>
+        <select name="cores" id="cores">
+            <option value="">Selecione a cor</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">Amarelo</option>
+            <option value="green">Verde</option>
+        </select>
+    </form>
+
+    <script>
+        const corSelecionado = window.document.getElementById('cores');
+
+        corSelecionado.addEventListener('change', function() {
+            const corEscolhido = corSelecionado.value;
+            document.body.style.backgroundColor = corEscolhido;
+        });
+
+    </script>
+</body>
+</html>

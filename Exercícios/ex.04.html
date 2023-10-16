@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragrafo">Estou a mostra</p>
+
+    <button id="mostrar">Mostrar</button>
+    <button id="ocultar">Ocultar</button>
+
+    <script>
+
+        const paragrafo = window.document.getElementById('paragrafo')
+
+        const ocultarParagrafo = window.document.getElementById('ocultar')
+
+        const mostrarParagrafo = window.document.getElementById('mostrar')
+
+        ocultarParagrafo.addEventListener('click', () => {
+           paragrafo.style.display = 'none';
+        });
+
+        mostrarParagrafo.addEventListener('click', () => {
+            paragrafo.style.display = 'block';
+
+        });
+
+        
+    </script>
+    
+</body>
+</html>

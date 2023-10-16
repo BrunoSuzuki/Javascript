@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#vermelho, #verde, #amarelo, #azul {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="vermelho">
+        Vermelho
+    </div>
+    <div id="verde">
+        Verde
+    </div>
+    <div id="amarelo">
+        Amarelo
+    </div>
+    <div id="azul">
+        Azul
+    </div>
+
+    <script>
+        const areaVermelho = window.document.getElementById('vermelho')
+        areaVermelho.addEventListener('mouseenter', entrarVermelho)
+
+        const areaVerde = window.document.getElementById('verde')
+        areaVerde.addEventListener('mouseenter', entrarVerde)
+
+        const areaAmarelo = window.document.getElementById('amarelo')
+        areaAmarelo.addEventListener('mouseenter', entrarAmarelo)
+
+        const areaAzul = window.document.getElementById('azul')
+        areaAzul.addEventListener('mouseenter', entrarAzul)
+
+
+        
+        function entrarVermelho() {
+        document.body.style.background = 'red'     
+        }
+
+        function entrarVerde() {
+        document.body.style.background = 'green'
+        }
+
+        function entrarAmarelo() {
+           document.body.style.background = 'yellow' 
+        }
+
+        function entrarAzul() {
+            document.body.style.background = 'blue'
+        }
+
+    </script>
+    
+</body>
+</html>
