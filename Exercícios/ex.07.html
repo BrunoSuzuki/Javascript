@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            
+        }
+
+        p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="nome1">Nome1: </label>
+        <input type="text" name="nome1" id="nome1">
+
+        <label for="nome2">Nome2: </label>
+        <input type="text" name="nome2" id="nome2">
+
+        <label for="nome3">Nome3: </label>
+        <input type="text" name="nome3" id="nome3">
+
+        <label for="nome4">Nome4: </label>
+        <input type="text" name="nome4" id="nome4">
+
+        <label for="nome5">Nome5: </label>
+        <input type="text" name="nome5" id="nome5">
+
+       <button type="button" id="btn_listar">Listar</button>
+
+        <p id="mostra_lista"></p>
+        
+        <script>
+            const lista = [];
+            
+            const nome1 = window.document.getElementById('nome1');
+            const nome2 = window.document.getElementById('nome2');
+            const nome3 = window.document.getElementById('nome3');
+            const nome4 = window.document.getElementById('nome4');
+            const nome5 = window.document.getElementById('nome5');
+            
+            const btnListar = window.document.getElementById('btn_listar');
+            const mostrarLista = window.document.getElementById('mostra_lista');
+            
+            
+                
+                btnListar.addEventListener('click', function() {
+                    lista.push(nome1.value);
+                    lista.push(nome2.value);
+                    lista.push(nome3.value);
+                    lista.push(nome4.value);
+                    lista.push(nome5.value);
+                    
+                    
+                    lista.reverse();
+                    
+                    mostrarLista.textContent = 'Lista Invertida: ' + lista.join(', ');
+                    
+                    
+                })
+            
+            
+            
+            
+            
+            </script>
+            </form>
+</body>
+</html>
